@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "BPGDejaVuSans-Bold";
+  src: url("../fonts/fonts/BPGDejaVuSans-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/fonts/BPGDejaVuSans-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/fonts/BPGDejaVuSans-Bold.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/fonts/BPGDejaVuSans-Bold.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/fonts/BPGDejaVuSans-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/fonts/BPGDejaVuSans-Bold.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/fonts/BPGDejaVuSans-Bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BPGDejaVuSans";
+  src: url("../fonts/fonts/BPGDejaVuSans.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/fonts/BPGDejaVuSans.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/fonts/BPGDejaVuSans.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/fonts/BPGDejaVuSans.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/fonts/BPGDejaVuSans.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/fonts/BPGDejaVuSans.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/fonts/BPGDejaVuSans.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BPGDejaVuSansCaps";
+  src: url("../fonts/fonts/BPGDejaVuSansCaps.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/fonts/BPGDejaVuSansCaps.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/fonts/BPGDejaVuSansCaps.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/fonts/BPGDejaVuSansCaps.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/fonts/BPGDejaVuSansCaps.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/fonts/BPGDejaVuSansCaps.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/fonts/BPGDejaVuSansCaps.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+$primary-font: 'BPGDejaVuSans';
+$caps-font: 'BPGDejaVuSansCaps';
+$bold-font: 'BPGDejaVuSans-Bold';

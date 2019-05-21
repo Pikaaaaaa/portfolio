@@ -1,0 +1,14 @@
+{
+  "name": "portfolio--main",
+  "version": "1.0.0",
+  "description": "step 1: run",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
