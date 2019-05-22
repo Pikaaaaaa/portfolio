@@ -51,7 +51,7 @@
         </div>
         <div class="header">
             <div class="container position-relative">
-                <div class="header__top d-flex align-items-center justify-content-between">
+                <div class="header__top d-lg-flex align-items-center justify-content-between">
                     <h2 class="header__logo">
                         <a href="#" class="header__logo-holder">
                             <span class="d-inline-block header__logo-holder-highlight">
@@ -59,7 +59,7 @@
                             </span>ikoloz
                         </a>
                     </h2>
-                    <div class="header__top-address d-flex align-items-center">
+                    <div class="header__top-address align-items-center d-lg-flex d-none">
                         <i class="fas fa-map-marker-alt icon-hover"></i>
                         <span class="d-inline-block pl-20">
                             Tbilisi, Georgia, Sairme St.
@@ -75,7 +75,7 @@
                             <li class="header__bottom-nav-el"><a href="#">contact</a></li>
                         </ul>
                     </nav>
-                    <div class="header__bottom-contact">
+                    <div class="header__bottom-contact d-lg-block d-none">
                         <a href="tel:+995555216562" class="header__bottom-contact-el header__bottom-contact-el--phone">
                             +995 555 21 65 62
                         </a>
@@ -89,8 +89,8 @@
                 </div>
                 <div class="header__slider-text position-absolute animated fadeIn">
                     <h1 class="header__slider-text-title">
-                        Hi, I'm <span class="header__slider-text-title-highlight">Nikoloz</span> and I'm 
-                        <span class="header__slider-text-title-highlight">FrontEnd</span> developer
+                        Hi, I'm <span class="header__slider-text-title-highlight">Nikoloz</span> and  
+                        <span class="d-block">I'm <span class="header__slider-text-title-highlight">FrontEnd</span> developer</span>
                     </h1>
                 </div>
                 <button class="btn btn--red btn--see-more">
@@ -130,7 +130,7 @@
                 </h4>
                 <div class="container">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-md-6 col-lg-4">
                             <a href="#" class="gallery__item d-block position-relative">
                                 <img src="uploads/images/gallery-1.jpg" alt="project" class="d-block gallery__item-img">
                                 <div class="gallery__item-hover position-absolute animated fadeIn">
@@ -138,7 +138,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-4">
+                        <div class="col-md-6 col-lg-4">
                             <a href="#" class="gallery__item d-block position-relative">
                                 <img src="uploads/images/gallery-2.jpg" alt="project" class="d-block gallery__item-img">
                                 <div class="gallery__item-hover position-absolute animated fadeIn">
@@ -146,7 +146,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-4">
+                        <div class="col-md-6 col-lg-4 d-md-none d-lg-block">
                             <a href="#" class="gallery__item d-block position-relative">
                                 <img src="uploads/images/gallery-3.jpg" alt="project" class="d-block gallery__item-img">
                                 <div class="gallery__item-hover position-absolute animated fadeIn">
@@ -155,8 +155,8 @@
                             </a>
                         </div>
                     </div>
-                    <div class="row mt-45">
-                        <div class="col-4">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
                             <a href="#" class="gallery__item d-block position-relative">
                                 <img src="uploads/images/gallery-4.jpg" alt="project" class="d-block gallery__item-img">
                                 <div class="gallery__item-hover position-absolute animated fadeIn">
@@ -164,7 +164,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-4">
+                        <div class="col-md-6 col-lg-4">
                             <a href="#" class="gallery__item d-block position-relative">
                                 <img src="uploads/images/gallery-5.jpg" alt="project" class="d-block gallery__item-img">
                                 <div class="gallery__item-hover position-absolute animated fadeIn">
@@ -172,7 +172,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-4">
+                        <div class="col-md-6 col-lg-4 d-md-none d-lg-block">
                             <a href="#" class="gallery__item d-block position-relative">
                                 <img src="uploads/images/gallery-6.jpg" alt="project" class="d-block gallery__item-img">
                                 <div class="gallery__item-hover position-absolute animated fadeIn">
@@ -203,7 +203,24 @@
 
     <footer class="site__footer">
         <div class="footer text-center">
-            &copy; Nikoloz Pichkhaia. 2019
+            <span class="d-block">&copy; Nikoloz Pichkhaia. 2019</span>
+            <div class="header__top-address mt-30 align-items-center d-inline-flex d-lg-none">
+                <i class="fas fa-map-marker-alt icon-hover"></i>
+                <span class="d-inline-block pl-20">
+                    Tbilisi, Georgia, Sairme St.
+                </span>
+            </div>
+            <div class="header__bottom-contact d-block d-lg-none">
+                <a href="tel:+995555216562" class="header__bottom-contact-el header__bottom-contact-el--phone">
+                    +995 555 21 65 62
+                </a>
+                <a href="https://www.facebook.com/Pikaaaaaaaaaaaaa" target="_blank" class="header__bottom-contact-el d-inline-block ml-25">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="mailto:pichkhaianikoloz@gmail.com" class="header__bottom-contact-el d-inline-block ml-5">
+                    <i class="far fa-envelope"></i>
+                </a>
+            </div>
         </div>
     </footer>
 

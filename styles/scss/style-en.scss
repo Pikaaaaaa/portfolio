@@ -343,3 +343,95 @@ a:hover {
 }
 
 // footer
+
+@include media-breakpoint-up(xl) {
+
+}
+
+@include media-breakpoint-up(lg) {
+
+}
+
+@include media-breakpoint-up(md) {
+  .gallery {
+
+    .container {
+      .row {
+        margin-top: 45px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) { 
+  .header__slider-text-title {
+    text-align: center;
+    font-size: 65px;
+  }
+
+  .header__bottom-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header {
+    padding-top: 70px;
+  }
+
+  .header__top {
+    text-align: center;
+  }
+
+  .btn--see-more {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 80px;
+  }
+
+  .gallery {
+
+    .container {
+      .row {
+        div {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .header__slider-text-title {
+    font-size: 34px;
+  }
+
+  .header__logo-holder {
+    font-size: 46px;
+  }
+
+  .header__bottom-nav {
+    font-size: 21px;
+  }
+
+  .header__bottom-nav-el {
+    margin: 0px 5px;
+    word-wrap: break-word;
+    font-size: 17px;
+  }
+
+  .about-me__photo {
+    width: 250px;
+    height: 250px;
+  }
+
+  .header__top-address {
+    font-size: 16px;
+  }
+
+  .about-me__bio {
+    text-align: center!important;
+  }
+
+}
+
+// responsive
