@@ -15,10 +15,9 @@
 
     <!--Plugins-->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Montserrat:900" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="plugins/bootstrap-4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="plugins/animatecss/animate.css" rel="stylesheet">
-    <link rel="stylesheet" href="plugins/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" href="plugins/bootstrap-select/dist/css/bootstrap-select.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="plugins/MDB-Free/css/bootstrap.min.css">
@@ -28,9 +27,9 @@
 
 </head>
 <body class="site">
-    <header class="site__header position-relative">
+    <header class="site__header position-relative" id="header">
         <div class="header__slider-wrapper position-absolute">
-            <div id="header__carousel" class="header__carousel carousel slide" data-ride="carousel" data-interval="3500">
+            <div id="header__carousel" class="header__carousel carousel slide" data-ride="carousel" data-interval="4500">
                 <ol class="header__carousel-indicators carousel-indicators">
                     <li class="header__carousel-indicators-control" data-target="#header__carousel" data-slide-to="0" class="active"></li>
                     <li class="header__carousel-indicators-control" data-target="#header__carousel" data-slide-to="1"></li>
@@ -69,10 +68,10 @@
                 <div class="header__bottom d-flex align-items-center justify-content-between mt-45">
                     <nav class="header__bottom-nav">
                         <ul class="header__bottom-nav-inner">
-                            <li class="header__bottom-nav-el"><a href="#">home</a></li>
-                            <li class="header__bottom-nav-el"><a href="#">about</a></li>
-                            <li class="header__bottom-nav-el"><a href="#">gallery</a></li>
-                            <li class="header__bottom-nav-el"><a href="#">contact</a></li>
+                            <li class="header__bottom-nav-el"><a class="header__bottom-nav-el-link" href="#header">home</a></li>
+                            <li class="header__bottom-nav-el"><a class="header__bottom-nav-el-link" href="#about-me">about</a></li>
+                            <li class="header__bottom-nav-el"><a class="header__bottom-nav-el-link" href="#gallery">gallery</a></li>
+                            <li class="header__bottom-nav-el"><a class="header__bottom-nav-el-link" href="#contact">contact</a></li>
                         </ul>
                     </nav>
                     <div class="header__bottom-contact d-lg-block d-none">
@@ -102,7 +101,7 @@
 
     <main class="site__content">
         <div class="content">
-            <section class="section about-me">
+            <section class="section about-me" id="about-me">
                 <div class="container text-center">
                     <img src="images/about-me-photo.png" alt="me" class="about-me__photo d-inline-block">
                     <h3 class="section__title section__title--about-me mt-30">
@@ -112,16 +111,32 @@
                         small bio
                     </h4>
                     <p class="about-me__bio text-left">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas cumque sapiente nam praesentium animi accusamus alias, 
-                        inventore accusantium quos optio voluptas quia fugiat quo odio porro. Dignissimos excepturi autem delectus, 
-                        ad fugiat architecto magnam dolore, culpa consequatur reiciendis voluptatem omnis consectetur ducimus reprehenderit nemo enim, 
-                        accusantium libero ipsa labore eveniet vitae sit. 
-                        Provident adipisci voluptatibus aspernatur, 
-                        nisi excepturi voluptatum repudiandae nesciunt eos! Doloremque itaque deleniti dicta odio neque libero mollitia?
+                        <span class="d-block">I'm Nikoloz, I'm a web developer and live in Tbilisi, Georgia.</span>
+                        <span class="d-block">I started coding when I was 15 and, since then, writing websites became my favorite job to do.</span> 
                     </p>
+                    <h4 class="section__subtitle mt-40">
+                        my skills
+                    </h4>
+                    <ul class="about__me-skills mt-30">
+                        <li class="about__me-skills-el d-inline-block">
+                            <i style="color: #e34f26" class="fab fa-html5"></i>
+                        </li>
+                        <li class="about__me-skills-el d-inline-block">
+                            <i style="color: #379ad5" class="fab fa-css3-alt"></i>
+                        </li>
+                        <li class="about__me-skills-el d-inline-block">
+                            <i style="color: #684199" class="fab fa-bootstrap"></i>
+                        </li>
+                        <li class="about__me-skills-el d-inline-block">
+                            <i style="color: #cd679a" class="fab fa-sass"></i>
+                        </li>
+                        <li class="about__me-skills-el d-inline-block">
+                            <i style="color: #f7e018" class="fab fa-js-square"></i>
+                        </li>
+                    </ul>
                 </div>
             </section>
-            <section class="section gallery text-center">
+            <section class="section gallery text-center" id="gallery">
                 <h3 class="section__title section__title--white">
                     gallery
                 </h3>
@@ -134,7 +149,14 @@
                             <a href="#" class="gallery__item d-block position-relative">
                                 <img src="uploads/images/gallery-1.jpg" alt="project" class="d-block gallery__item-img">
                                 <div class="gallery__item-hover position-absolute animated fadeIn">
-                                    <i class="fas fa-search-plus gallery__item-zoom position-absolute"></i>
+                                    <div class="gallery__item-desc position-absolute">
+                                        <h5 class="gallery__item-desc-project-title">
+                                            snuff
+                                        </h5>
+                                        <span class="gallery__item-desc-project-type d-block">
+                                            online shop
+                                        </span>
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -142,7 +164,6 @@
                             <a href="#" class="gallery__item d-block position-relative">
                                 <img src="uploads/images/gallery-2.jpg" alt="project" class="d-block gallery__item-img">
                                 <div class="gallery__item-hover position-absolute animated fadeIn">
-                                    <i class="fas fa-search-plus gallery__item-zoom position-absolute"></i>
                                 </div>
                             </a>
                         </div>
@@ -150,7 +171,6 @@
                             <a href="#" class="gallery__item d-block position-relative">
                                 <img src="uploads/images/gallery-3.jpg" alt="project" class="d-block gallery__item-img">
                                 <div class="gallery__item-hover position-absolute animated fadeIn">
-                                    <i class="fas fa-search-plus gallery__item-zoom position-absolute"></i>
                                 </div>
                             </a>
                         </div>
@@ -160,7 +180,6 @@
                             <a href="#" class="gallery__item d-block position-relative">
                                 <img src="uploads/images/gallery-4.jpg" alt="project" class="d-block gallery__item-img">
                                 <div class="gallery__item-hover position-absolute animated fadeIn">
-                                    <i class="fas fa-search-plus gallery__item-zoom position-absolute"></i>
                                 </div>
                             </a>
                         </div>
@@ -168,7 +187,6 @@
                             <a href="#" class="gallery__item d-block position-relative">
                                 <img src="uploads/images/gallery-5.jpg" alt="project" class="d-block gallery__item-img">
                                 <div class="gallery__item-hover position-absolute animated fadeIn">
-                                    <i class="fas fa-search-plus gallery__item-zoom position-absolute"></i>
                                 </div>
                             </a>
                         </div>
@@ -176,14 +194,13 @@
                             <a href="#" class="gallery__item d-block position-relative">
                                 <img src="uploads/images/gallery-6.jpg" alt="project" class="d-block gallery__item-img">
                                 <div class="gallery__item-hover position-absolute animated fadeIn">
-                                    <i class="fas fa-search-plus gallery__item-zoom position-absolute"></i>
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section contact text-center">
+            <section class="section contact text-center" id="contact">
                 <h3 class="section__title">
                     get in touch
                 </h3>
@@ -228,7 +245,6 @@
     <script src="plugins/jquery/jquery-3.3.1.min.js"></script>
     <script src="plugins/bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
     <script src="plugins/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
-    <script src="plugins/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="plugins/bootstrap-select/dist/js/bootstrap-select.js"></script>
     <script src="plugins/MDB-Free/js/mdb.min.js"></script>
 

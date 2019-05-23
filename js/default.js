@@ -24,5 +24,20 @@ $(document).ready(function () {
             scrollTop: ($('.about-me').offset().top)
         },500);
     })
+
+    // nav
+    
+    var $headerBottomNavLink = $('.header__bottom-nav-el-link');
+
+    $headerBottomNavLink.click(function(e){
+        e.preventDefault();
+        
+        var $section = $(this).attr("href");
+        console.log($section)
+
+        $('html, body').animate({
+            scrollTop: ($($section).offset().top)
+        },500);
+    });
     
 });
