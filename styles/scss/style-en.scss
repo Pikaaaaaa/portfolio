@@ -284,9 +284,9 @@ a:hover {
 .gallery__item-hover {
   width: 100%;
   height: 100%;
-  background: -moz-linear-gradient(top,  rgba(97, 71, 80, 0.5) 0%, rgba(97, 71, 80, 0.5) 38%, rgba(97, 71, 80, 0.9) 100%);
-  background: -webkit-linear-gradient(top,  rgba(97, 71, 80, 0.5) 0%,rgba(97, 71, 80, 0.5) 38%,rgba(97, 71, 80, 0.9) 100%); 
-  background: linear-gradient(to bottom,  rgba(97, 71, 80, 0.5) 0%,rgba(97, 71, 80, 0.5) 38%,rgba(97, 71, 80, 0.9) 100%); 
+  background: -moz-linear-gradient(top,  rgba(97, 71, 80, 0.5) 0%, rgba(97, 71, 80, 0.5) 38%, rgba(97, 71, 80, 1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(97, 71, 80, 0.5) 0%,rgba(97, 71, 80, 0.5) 38%,rgba(97, 71, 80, 1) 100%); 
+  background: linear-gradient(to bottom,  rgba(97, 71, 80, 0.5) 0%,rgba(97, 71, 80, 0.5) 38%,rgba(97, 71, 80, 1) 100%); 
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78f53535', endColorstr='#f53535',GradientType=0 );
   display: none;
   top: 0;
@@ -310,6 +310,7 @@ a:hover {
   font-size: 18px;
   color: $secondary-color--light;
   text-transform: capitalize;
+  text-align: left;
 }
 
 .gallery__item-zoom {
@@ -323,6 +324,126 @@ a:hover {
 .gallery__item-img {
   width: 100%;
   height: 100%;
+}
+
+// gallery project
+
+.gallery__project {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url('../../images/gallery-bg.jpg') no-repeat center;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  z-index: 4;
+  overflow-y: auto;
+}
+
+.gallery__project-top {
+  padding: 20px;
+}
+
+.gallery__project-close {
+  width: 60px;
+  height: 60px;
+  background: url('../../images/gallery-project-close.png') no-repeat center;
+  background-size: cover;
+
+  &:hover {
+    transition: all 0.3s ease;
+    background: url('../../images/gallery-project-close--hovered.png') no-repeat center;
+    background-size: cover;
+  }
+}
+
+.gallery__project-content {
+  display: none;
+}
+
+.gallery__project-content.active {
+  display: block;
+}
+
+.gallery__project-img {
+  width: 470px;
+  height: 600px;
+  border: solid $primary-color 3px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.55);
+    
+  &:hover {
+    .gallery__project-img-hover {
+      display: block;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.gallery__project-img-hover {
+  background-color: rgba($color: #000000, $alpha: .7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+
+  i {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 52px;
+  }
+}
+
+.gallery__project-title {
+  font-size: 42px;
+  text-transform: uppercase;
+  font-family: $secondary-font;
+  color: $primary-color;
+  margin-bottom: 65px;
+}
+
+.gallery__project-title-highlight {
+  font-size: 32px;
+  color: #fff;
+  font-family: $secondary-font;
+}
+
+.gallery__project-subtitle {
+  @extend .gallery__project-title;
+  font-size: 21px;
+  margin-bottom: 25px;
+}
+
+.gallery__project-subtitle-highlight {
+  font-size: 16px;
+  color: $secondary-color--light;
+  font-family: $primary-font;
+  text-transform: capitalize;
+}
+
+.gallery__project-frameworks {
+  margin-top: 45px;
+}
+
+.gallery__projects-frameworks-list-el {
+  margin: 0 20px;
+  font-size: 52px;
+  text-align: center;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  img {
+    width: 65px;
+    height: 70px;
+  }
 }
 
 // gallery
@@ -408,7 +529,7 @@ a:hover {
 
     .container {
       .row {
-        div {
+        .col-md-6 {
           margin-top: 15px;
         }
       }

@@ -39,5 +39,33 @@ $(document).ready(function () {
             scrollTop: ($($section).offset().top)
         },500);
     });
+
+    // gallery
     
+    var $galleryItem = $('.gallery__item');
+    var $galleryProject = $('.gallery__project');
+    var $galleryProjectClose = $('.gallery__project-close');
+    var $body = $('.site');
+
+    $galleryItem.click(function(e){
+        e.preventDefault();
+        var $galleryProjectContent = $(('[data-id=' + $(this).data('id') + ']'));
+        console.log($galleryProjectContent);
+        
+        $galleryProject.addClass('d-block slideInUp animated');
+        $body.css('overflow', 'hidden');
+
+        $galleryProjectContent.addClass('active');
+    });
+
+    $galleryProjectClose.click(function(e){
+        e.preventDefault();
+        
+        $galleryProject.removeClass('d-block fadeIn animated');
+        $body.css('overflow', 'auto');
+        
+        $galleryProjectContent = $galleryProject.find('.active');
+
+        $galleryProjectContent.removeClass('active');
+    });
 });
