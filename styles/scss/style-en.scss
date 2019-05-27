@@ -432,7 +432,7 @@ a:hover {
 }
 
 .gallery__projects-frameworks-list-el {
-  margin: 0 20px;
+  margin: 0 10px;
   font-size: 52px;
   text-align: center;
 
@@ -535,6 +535,20 @@ a:hover {
       }
     }
   }
+
+  .gallery__project__desc {
+    margin-top: 60px;
+    margin-left: 0;
+  }
+
+  .gallery__project-title {
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+
+  .gallery__project-subtitle {
+    font-size: 26px;
+  }
 }
 
 @include media-breakpoint-down(sm) {
@@ -567,6 +581,11 @@ a:hover {
 
   .about-me__bio {
     text-align: center!important;
+  }
+
+  .gallery__project-img {
+    width: 260px;
+    height: 350px;
   }
 
 }
