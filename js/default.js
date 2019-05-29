@@ -7,6 +7,7 @@ $(document).ready(function () {
 
         function headerNavFixed(){
             var $headerNav = $('.header__bottom-nav');
+            var $headerNavEl = $('.header__bottom-nav-el-link');
 
             if($scroll >= 320) {
                 $headerNav.addClass('fixed fadeIn animated');
