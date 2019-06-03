@@ -65,8 +65,8 @@ a:hover {
 
 .site__header {
   width: 100%;
-  height: 100vh;
-  background: -webkit-linear-gradient(left,#72545f 1%,#502f3a 54%,#2b1b20 100%);;
+  height: 940px;
+  background: url("../../images/header-bg.png"), -webkit-linear-gradient(left,#72545f 0%,#502f3a 50%,#2b1b20 100%);;
   background-position: center bottom;
   background-repeat: no-repeat;
 }
@@ -461,6 +461,10 @@ a:hover {
 }
 
 @include media-breakpoint-down(md) { 
+  .site__header {
+    background-position: 0;
+  }
+  
   .header__slider-text-title {
     text-align: center;
     font-size: 65px;
