@@ -20,7 +20,7 @@ $(document).ready(function () {
 
     // btn see more animate
 
-    $('.btn--see-more').click(function(){
+    $('.scroll-down').click(function(){
         $('html, body').animate({
             scrollTop: ($('.about-me').offset().top)
         },500);
