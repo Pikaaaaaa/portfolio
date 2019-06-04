@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
     $(window).scroll(function (event) {
         var $scroll = $(window).scrollTop();
         headerNavFixed();
